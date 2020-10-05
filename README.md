@@ -15,10 +15,8 @@ Posteriormente, procedí a preparar ambos datasets para el entrenamiento, convir
 El siguiente paso, una vez preparados los datasets, es entrenar el model. Para ello, hay que importarlo, denominarlo de alguna manera (generalmente y en nuestro caso, la denomincacion es "model"), y posterirmente se entrena aplicando un "model.fit(X_train,y_train)". Con esto, lo que hemos conseguido es que el algoritmo entiendo cuales son los datos y sus consiguientes resultados. Una vez el algortimo ya sabe como interpretar los datos, este es aplicado a nuestro X_test de la siguiente manera: y_pred = model.predict(X_test). Asi obtenermos los resultados que pretendiamos en este proyecto.
 
 ## Exportación del DataFrame
-Convertimos el y_pred en un DataFrame de Pandas, y mediante el codigo <DataFrame>.to_csv("<nombre>.csv"), exportamos este DataFrame al disco.
+Convertimos el y_pred en un DataFrame de Pandas, y mediante el codigo -DataFrame-.to_csv("-nombre-.csv"), exportamos este DataFrame al disco.
   
 ## Métricas
-Después, y con el fin de conocer lo bien que funcionaba el algortimo aplicado a este estudio, he utilizado una serie de metricas que nos indican diversas informaciones:
- 
-### 
+Después, y con el fin de conocer lo bien que funcionaba el algoritmo aplicado a este estudio, he utilizado una serie de métricas que nos indican diversas informaciones. Para ello, hacía un train_test_split al X_train e y_train respectivamente, y despues importaba las metricas e introducia los parametros requeridos por cada una. 
 
